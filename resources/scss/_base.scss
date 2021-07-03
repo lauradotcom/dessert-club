@@ -1,0 +1,15 @@
+// Typography
+$header-font: 'Libre Baskerville', serif;
+$body-font: 'Nunito', sans-serif;
+
+
+// Colors
+$primary-light: hsl(330,67.65%,86.67%);
+$primary-medium:hsl(341.2,47.98%,66.08%);
+$primary-dark: hsl(346.43,34.43%,47.84%);
+$neutral: hsl(36.21,87.88%,87.06%);
+$accent: hsl(75,18.67%,70.59%);
+
+$neutral-translucent: hsla(36.21,87.88%,87.06%,0.75);
+$primary-translucent: hsla(341.2, 47.98%,66.08%, 0.8);
+$primary-light-translucent: hsla(330,67.65%,86.67%,0.3);

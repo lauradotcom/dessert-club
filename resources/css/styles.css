@@ -1,0 +1,234 @@
+button {
+  background: #f4c6dd;
+  color: #a45063;
+  font-weight: 700;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  padding: 7.5% 30%;
+}
+
+@media screen and (max-width: 1023px) {
+  button {
+    display: none;
+  }
+}
+i {
+  color: #d27f99;
+  width: 36px;
+}
+
+body {
+  font-size: 16px;
+  text-align: center;
+  color: #a45063;
+  min-width: 320px;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
+h1, h2, h3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1.25rem;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    grid-area: header;
+  }
+}
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100vw;
+  height: 75px;
+  padding: 0 10vw;
+  background: #a45063;
+  color: #fbe4c1;
+}
+header img {
+  width: 158px;
+}
+header nav {
+  text-align: right;
+}
+header nav i {
+  color: #fbe4c1;
+  font-size: 2.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header img {
+    width: 319px;
+  }
+  header nav i:before {
+    display: none;
+  }
+}
+main {
+  background-image: url("../images/macaron-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10vh 0vw;
+  margin-top: 59px;
+}
+main section {
+  padding: 10vw;
+}
+main section figure {
+  width: 100%;
+}
+main section figure img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main section {
+    padding: 5vh;
+  }
+  main section figure {
+    overflow: hidden;
+    object-fit: contain;
+  }
+  main section figure img {
+    min-height: 500px;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main section {
+    padding: 10vh;
+  }
+}
+.hero {
+  margin: 0vh 10vw 10vh 10vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: rgba(251, 228, 193, 0.75);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+}
+.chapters {
+  background: #bbc2a6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5rem 1fr 1fr 1fr;
+  grid-template-areas: "header" "sicilia" "tokyo" "seattle";
+  grid-gap: 4rem;
+  justify-items: center;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .chapters {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 1fr;
+    grid-template-areas: "header header header" "sicilia tokyo seattle";
+  }
+}
+.city {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  min-height: 325px;
+  border-radius: 10px;
+}
+
+.cityname {
+  background-color: rgba(210, 127, 153, 0.8);
+  border-radius: 0 0 10px 10px;
+}
+.cityname h3 {
+  text-transform: uppercase;
+  color: #fbe4c1;
+  font-size: 2.25rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+#sicilia {
+  background-image: linear-gradient(rgba(244, 198, 221, 0.3), rgba(244, 198, 221, 0.3)), url("../images/sicilia-chapter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: sicilia;
+}
+
+#tokyo {
+  background-image: linear-gradient(rgba(244, 198, 221, 0.3), rgba(244, 198, 221, 0.3)), url("../images/tokyo-chapter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: tokyo;
+}
+
+#seattle {
+  background-image: linear-gradient(rgba(244, 198, 221, 0.3), rgba(244, 198, 221, 0.3)), url("../images/seattle-chapter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: seattle;
+}
+
+footer {
+  background: #fbe4c1;
+  width: 100vw;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer i {
+  font-size: 2.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    justify-content: center;
+  }
+  footer i {
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
